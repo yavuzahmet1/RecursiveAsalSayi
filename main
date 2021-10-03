@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main {
+    static void isPrime(int a) {
+        for (int i = 2; i < a; i++) {
+            if (a % i == 0) {
+                System.out.println(a + " sayısı ASAL değildir !");
+                break;
+            } else {
+                System.out.println(a + " sayısı ASALDIR!");
+                break;
+            }
+        }
+    }
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Sayı giriniz\t: ");
+        int number = scanner.nextInt();
+        isPrime(number);
+    }
+}
